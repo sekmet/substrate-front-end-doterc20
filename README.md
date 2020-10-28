@@ -1,4 +1,4 @@
-# Substrate Front End Template
+# Substrate Front End DOTERC20 - Hackathon: Hello World! by Polkadot
 
 This template allows you to create a front-end application that connects to a
 [Substrate](https://github.com/paritytech/substrate) node back-end with minimal
