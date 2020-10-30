@@ -6,13 +6,14 @@ import { SubstrateContextProvider, useSubstrate } from './substrate-lib';
 import { DeveloperConsole } from './substrate-lib/components';
 
 import AccountSelector from './AccountSelector';
-import Balances from './Balances';
+import Balances from './Doterc20Balances';
 import BlockNumber from './BlockNumber';
 import Events from './Events';
 import Interactor from './Interactor';
 import Metadata from './Metadata';
 import NodeInfo from './NodeInfo';
-import TemplateModule from './TemplateModule';
+//  import TemplateModule from './TemplateModule';
+import Doterc20Transfer from './Doterc20Transfer';
 import Transfer from './Transfer';
 import Upgrade from './Upgrade';
 
@@ -65,15 +66,15 @@ function Main () {
             <Balances />
           </Grid.Row>
           <Grid.Row>
-            <Transfer accountPair={accountPair} />
-            <Upgrade accountPair={accountPair} />
-          </Grid.Row>
-          <Grid.Row>
-            <Interactor accountPair={accountPair} />
+            <Doterc20Transfer accountPair={accountPair} />
             <Events />
           </Grid.Row>
           <Grid.Row>
-            <TemplateModule accountPair={accountPair} />
+            <Transfer accountPair={accountPair} />
+          </Grid.Row>
+          <Grid.Row>
+            <Interactor accountPair={accountPair} />
+            <Upgrade accountPair={accountPair} />
           </Grid.Row>
         </Grid>
       </Container>
